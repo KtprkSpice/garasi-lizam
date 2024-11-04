@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Garasi Lizam</title>
+  </head>
+  <body class="font-mono overflow-x-hidden">
+    <!-- Start Nav Section -->
+    <nav
+      class="bg-black/70 text-white sticky top-0 z-50 backdrop-blur-sm backdrop-sepia"
+    >
+      <div class="p-5 flex justify-between items-center">
+        <!-- Logo or Brand Name -->
+        <div class="text-xl font-semibold">Garasi Lizam</div>
+
+        <!-- Hamburger Icon (visible on small screens) -->
+        <div class="md:hidden">
+          <button id="menu-btn" class="text-white focus:outline-none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Links (visible on medium and larger screens) -->
+        <div class="hidden md:flex gap-10 tracking-tighter">
+          <a href="#home" class="hover:text-gray-300">Home</a>
+          <a href="#services" class="hover:text-gray-300">Layanan</a>
+          <a href="#ourWorks" class="hover:text-gray-300">Yang Kami Jual</a>
+          <a href="#aboutUs" class="hover:text-gray-300">Tentang Kami</a>
+          <a href="#contact" class="hover:text-gray-300">Kontak</a>
+        </div>
+      </div>
+
+      <!-- Mobile Menu (hidden by default) -->
+      <div id="mobile-menu" class="hidden md:hidden bg-black text-white">
+        <a href="#home" class="block px-5 py-2 hover:bg-gray-700">Home</a>
+        <a href="#services" class="block px-5 py-2 hover:bg-gray-700"
+          >Layanan</a
+        >
+        <a href="#ourWorks" class="block px-5 py-2 hover:bg-gray-700"
+          >Yang Kami Jual</a
+        >
+        <a href="#aboutUs" class="block px-5 py-2 hover:bg-gray-700"
+          >Tentang Kami</a
+        >
+        <a href="#contact" class="block px-5 py-2 hover:bg-gray-700">Kontak</a>
+      </div>
+    </nav>
+    <!-- End Nav Section -->
+
+    <!-- JavaScript to Toggle Mobile Menu -->
+
+    <!-- Start Title Section -->
+    <section class="relative h-screen overflow-hidden" id="home">
+      <img
+        src="assets/speda2.webp"
+        alt=""
+        class="w-full h-full object-cover fixed inset-0 -z-10 top-14 bg-red-500/50"
+      />
+      <div
+        class="absolute inset-0 flex flex-col items-center justify-center text-white gap-2"
+      >
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold">Garasi Lizam</h1>
+        <p class="text-center text-base md:text-lg lg:text-xl font-normal">
+          Jual dan Servis Macam Jenis Motor, Sepeda, dan Sepeda Listrik
+        </p>
+      </div>
+    </section>
+    <!-- End Title Section -->
+
+    <!-- Start Services Section -->
+    <section
+      id="services"
+      class="bg-black text-white mt-10 bg-fixed"
+      style="background-image: url(assets/road-texture.jpg)"
+    >
+      <div class="bg-black/70 w-full h-full py-10">
+        <div class="border-b-white border-b-2 w-fit mx-auto pt-5">
+          <h1 class="text-4xl md:text-5xl pb-4">Pelayanan</h1>
+        </div>
+        <div
+          class="flex flex-col md:flex-row px-10 md:px-20 pt-10 md:pt-20 justify-evenly gap-10 md:gap-20"
+        >
+          <!-- Service 1 -->
+          <div
+            class="w-full md:w-[300px] flex flex-col gap-y-5 items-center text-center"
+          >
+            <svg
+              class="fill-white w-[10rem]"
+              preserveAspectRatio="xMidYMid meet"
+              data-bbox="-459 301 160 160"
+              viewBox="-459 301 160 160"
+              role="presentation"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g>
+                <path
+                  d="M-393.6 414.3H-416c-4.6 0-8.3-4.3-8.3-9.5l-.3-36.1c0-5.3 3.6-9.5 8.1-9.5h49.4c2.8 0 5.4 1.7 6.9 4.5h.3c4.5 0 8.1 2.7 8.1 6.1v10.6c0 3.3-3.3 6-7.7 6.1-1.2 3.6-4.2 6.2-7.6 6.2h-18.3v12.1c.1 5.3-3.7 9.5-8.2 9.5zm-22.9-51.8c-2.6 0-4.8 2.8-4.8 6.2l.3 36.1c0 3.4 2.2 6.2 5 6.2h22.3c2.7 0 5-2.8 5-6.2V391c0-.9.7-1.7 1.7-1.7h20c2.2 0 4.1-2 4.6-4.8.1-.8.8-1.4 1.6-1.4h.9c2.8 0 4.7-1.5 4.7-2.8v-10.6c0-1.3-1.9-2.8-4.7-2.8h-1.4c-.7 0-1.3-.4-1.6-1.1-.8-2.1-2.5-3.4-4.3-3.4h-49.3z"
+                ></path>
+                <path
+                  d="M-398.3 405.6h-12.9c-3 0-5.5-2.2-5.5-4.9v-7.4c0-2.7 2.5-4.9 5.5-4.9h12.9c3 0 5.5 2.2 5.5 4.9v7.4c0 2.7-2.5 4.9-5.5 4.9zm-13-13.8c-1.2 0-2.2.7-2.2 1.6v7.4c0 .8 1 1.6 2.2 1.6h12.9c1.2 0 2.2-.7 2.2-1.6v-7.4c0-.8-1-1.6-2.2-1.6h-12.9z"
+                ></path>
+                <path
+                  d="M-398.7 370.8h-12.7c-.9 0-1.7-.7-1.7-1.7 0-.9.7-1.7 1.7-1.7h12.7c.9 0 1.7.7 1.7 1.7 0 .9-.8 1.7-1.7 1.7z"
+                ></path>
+                <path
+                  d="M-335.1 400c-.9 0-1.7-.7-1.7-1.7v-49c0-.9.7-1.7 1.7-1.7.9 0 1.7.7 1.7 1.7v49c0 .9-.8 1.7-1.7 1.7z"
+                ></path>
+                <path
+                  d="M-341.1 364.6a2.6 2.6 0 1 1-5.2 0 2.6 2.6 0 0 1 5.2 0z"
+                ></path>
+                <path
+                  d="M-347.2 358.2a2.6 2.6 0 1 1-5.2 0 2.6 2.6 0 0 1 5.2 0z"
+                ></path>
+                <path
+                  d="M-336.1 377.4h-15.7c-.9 0-1.7-.7-1.7-1.7 0-.9.7-1.7 1.7-1.7h15.7c.9 0 1.7.7 1.7 1.7 0 .9-.8 1.7-1.7 1.7z"
+                ></path>
+                <path
+                  d="M-349.1 392c-.4 0-.8-.1-1.1-.4-.7-.6-.8-1.7-.2-2.4l7-8.3c.6-.7 1.7-.8 2.4-.2.7.6.8 1.7.2 2.4l-7 8.3c-.3.4-.8.6-1.3.6z"
+                ></path>
+                <path
+                  d="M-379 461c-44.1 0-80-35.9-80-80s35.9-80 80-80 80 35.9 80 80-35.9 80-80 80zm0-156.6c-42.2 0-76.6 34.3-76.6 76.6s34.3 76.6 76.6 76.6c42.2 0 76.6-34.3 76.6-76.6s-34.4-76.6-76.6-76.6z"
+                ></path>
+              </g>
+            </svg>
+            <h1 class="text-2xl md:text-5xl uppercase">Memperbaiki</h1>
+            <p class="text-sm md:text-base">
+              Memperbaiki kondisi kerusakan yang dapat diperbaiki
+            </p>
+          </div>
+
+          <!-- Service 2 -->
+          <div
+            class="w-full md:w-[300px] flex flex-col gap-y-5 items-center text-center"
+          >
+            <svg
+              class="fill-white w-[10rem]"
+              preserveAspectRatio="xMidYMid meet"
+              data-bbox="20 20 160 160"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="20 20 160 160"
+              role="presentation"
+              aria-hidden="true"
+            >
+              <g>
+                <path
+                  d="M100 20c-44.1 0-80 35.9-80 80s35.9 80 80 80 80-35.9 80-80-35.9-80-80-80zm0 156.6c-42.2 0-76.6-34.3-76.6-76.6 0-42.2 34.3-76.6 76.6-76.6 42.2 0 76.6 34.3 76.6 76.6 0 42.2-34.4 76.6-76.6 76.6z"
+                ></path>
+                <path
+                  d="M106.5 118h-21c-.8 0-1.5.7-1.5 1.5v12c0 .8.7 1.5 1.5 1.5h21c.8 0 1.5-.7 1.5-1.5v-12c0-.8-.7-1.5-1.5-1.5zm-1.5 12H87v-9h18v9z"
+                ></path>
+                <path
+                  d="M106.5 97h-21c-.8 0-1.5.7-1.5 1.5v12c0 .8.7 1.5 1.5 1.5h21c.8 0 1.5-.7 1.5-1.5v-12c0-.8-.7-1.5-1.5-1.5zm-1.5 12H87v-9h18v9z"
+                ></path>
+                <path
+                  d="M106.5 76h-21c-.8 0-1.5.7-1.5 1.5v12c0 .8.7 1.5 1.5 1.5h21c.8 0 1.5-.7 1.5-1.5v-12c0-.8-.7-1.5-1.5-1.5zM105 88H87v-9h18v9z"
+                ></path>
+                <path
+                  d="M95.4 71.5c2.9 0 5.2-2.3 5.2-5.2 0-2.9-2.3-5.2-5.2-5.2-2.9 0-5.2 2.3-5.2 5.2 0 2.9 2.3 5.2 5.2 5.2zm0-7.5c1.2 0 2.2 1 2.2 2.2 0 1.2-1 2.2-2.2 2.2-1.2 0-2.2-1-2.2-2.2 0-1.2 1-2.2 2.2-2.2z"
+                ></path>
+                <path
+                  d="M113.6 64.9c-1.4-5.3-6-8.9-11.9-8.9H91.2c-7 0-13.2 5.2-13.2 12.3v64.3c0 7 6.2 12.4 13.2 12.4h10.5c1.7 0 3.3-.3 4.7-.9l4-.9 7-1.6c1.4-.3 2.7-.8 3.9-1.6l12.9-5.5c6.3-3 9-10.6 6-17l-26.6-52.6zm-2.6 67.4c0 5.4-3.9 9.7-9.3 9.7H91.2c-5.4 0-10.2-4.4-10.2-9.7V68.7c0-5.4 4.4-9.7 9.7-9.7h10.6c3.7 0 6.9 2.1 8.6 5.1 0 .1.1.2.1.3l.3.7c.4 1.1.7 2.3.7 3.6v63.6zm11.9 2.1c-1.4 2.2-3.6 3.7-6.1 4.2l-4.7 1.1h-.2c1.5-2.1 2.2-4.5 2.2-7.2V81.1l10.2 46c.5 2.5 0 5.1-1.4 7.3zm10.1-2.6l-6.8 2.9c1.2-2.5 1.6-5.4 1-8.2L116 76.4l21.5 42.4c2.3 4.9.3 10.7-4.5 13z"
+                ></path>
+              </g>
+            </svg>
+            <h1 class="text-2xl md:text-5xl uppercase">pelapisan</h1>
+            <p class="text-sm md:text-base">
+              Pelayanan untuk Pelapisan untuk kendaraan kesayangan anda.
+            </p>
+          </div>
+
+          <!-- Service 3 -->
+          <div
+            class="w-full md:w-[300px] flex flex-col gap-y-5 items-center text-center"
+          >
+            <svg
+              class="fill-white w-[10rem]"
+              preserveAspectRatio="xMidYMid meet"
+              data-bbox="-459 301 160 160"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="-459 301 160 160"
+              role="presentation"
+              aria-hidden="true"
+            >
+              <g>
+                <path
+                  d="M-379 461c-44.1 0-80-35.9-80-80s35.9-80 80-80 80 35.9 80 80-35.9 80-80 80zm0-156.6c-42.2 0-76.6 34.3-76.6 76.6 0 42.2 34.3 76.6 76.6 76.6 42.2 0 76.6-34.3 76.6-76.6 0-42.2-34.4-76.6-76.6-76.6z"
+                ></path>
+                <path
+                  d="M-350.5 369.5c-.8 0-1.5-.7-1.5-1.5 0-14.6-11.8-26.4-26.4-26.4-15.5 0-27.1 10.5-27.1 24.4 0 .8-.7 1.5-1.5 1.5s-1.5-.7-1.5-1.5c0-15.6 12.9-27.4 30.1-27.4 16.2 0 29.4 13.2 29.4 29.4 0 .8-.7 1.5-1.5 1.5z"
+                ></path>
+                <path
+                  d="M-378 374.9c-13.7 0-24.4-1.7-29.2-4.8-.7-.4-.9-1.4-.5-2.1.4-.7 1.4-.9 2.1-.5 1.6 1 8.3 4.3 27.6 4.3 18.3 0 24.7-3 26.6-4.3.7-.5 1.6-.3 2.1.4s.3 1.6-.4 2.1c-2.6 1.9-9.8 4.9-28.3 4.9z"
+                ></path>
+                <path
+                  d="M-378.7 423.4c-16.9 0-23.8-2.6-29.3-4.6-.6-.2-1-.8-1-1.4v-45.7l.5-5.8c0-.5.3-.9.7-1.1 4.7-3 15.8-4.8 29.6-4.8s24.1 1.8 28.2 4.8c.4.3.6.7.6 1.2v51.4c0 .5-.2.9-.6 1.2-4 3-14.8 4.8-28.7 4.8zm-27.3-7.1c5.4 2 11.9 4.1 27.3 4.1 14.7 0 23.1-1.9 26.4-3.8v-49.8c-2.2-1.3-8.7-3.8-25.8-3.8-14.8 0-23.7 2-27.4 3.9l-.4 4.9-.1 44.5z"
+                ></path>
+                <path
+                  d="M-378.3 408.5c-7.4 0-11.6-.5-17.4-1.2-.8-.1-1.3-.7-1.3-1.5v-22.4c0-.4.2-.8.5-1.1.3-.3.7-.4 1.2-.4 5.7.7 9.9 1.2 17.1 1.2 4.7 0 9.4-.2 12.4-.6.4-.1.8.1 1.2.4.3.3.5.7.5 1.1v22.4c0 .8-.6 1.4-1.3 1.5-3.3.3-8.1.6-12.9.6zm-15.8-4c5.1.6 9.1 1 15.8 1 4.1 0 8.1-.2 11.1-.4v-19.4c-3 .3-7 .4-11.1.4-6.7 0-10.7-.4-15.8-1v19.4z"
+                ></path>
+              </g>
+            </svg>
+            <h1 class="text-2xl md:text-5xl uppercase">ganti cat</h1>
+            <p class="text-sm md:text-base">
+              Kami akan mengubah cat kendaraaan anda jika diperlukan
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Services Section -->
+
+    <!-- Start Our Works Section -->
+    <section class="bg-white text-black py-10" id="ourWorks">
+      <div class="flex flex-col text-center gap-5 mb-5">
+        <div class="border-b-black border-b-2 w-fit place-self-center pt-5">
+          <h3 class="text-3xl md:text-5xl pb-4">Yang Kami Jual</h3>
+        </div>
+        <p class="text-base md:text-lg px-4 md:px-0">
+          Barang bekas yang kami jual untuk lebih banyak klik tombol dibawah
+        </p>
+      </div>
+      <div class="px-5 md:px-20 lg:px-32">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="relative group">
+            <img
+              src="assets/honda-beat-warna-baru.jpeg"
+              alt="gambar-motor-beat-1"
+              class="w-full h-48 md:h-64 lg:h-72 object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-black opacity-0 group-hover:opacity-60 transition-opacity duration-300"
+            ></div>
+          </div>
+          <div class="relative group bg-white">
+            <img
+              src="assets/speda2.webp"
+              alt="gambar-sepeda-1"
+              class="w-full h-48 md:h-64 lg:h-72 object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-black opacity-0 group-hover:opacity-60 transition-opacity duration-300"
+            ></div>
+          </div>
+          <div class="relative group">
+            <img
+              src="assets/speda-listrik1.jpg"
+              alt="sepeda-listrik"
+              class="w-full h-48 md:h-64 lg:h-72 object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-black opacity-0 group-hover:opacity-60 transition-opacity duration-300"
+            ></div>
+          </div>
+          <div class="relative group bg-white">
+            <img
+              src="assets/speda3.webp"
+              alt="gambar-sepeda-3"
+              class="w-full h-48 md:h-64 lg:h-72 object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-black opacity-0 group-hover:opacity-60 transition-opacity duration-300"
+            ></div>
+          </div>
+          <div class="relative group">
+            <img
+              src="assets/cub1.jpg"
+              alt="gambar-motor-beat-2"
+              class="w-full h-48 md:h-64 lg:h-72 object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-black opacity-0 group-hover:opacity-60 transition-opacity duration-300"
+            ></div>
+          </div>
+          <div class="relative group">
+            <img
+              src="assets/speda4.webp"
+              alt="gambar-sepeda-4"
+              class="w-full h-48 md:h-64 lg:h-72 object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-black opacity-0 group-hover:opacity-60 transition-opacity duration-300"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center mt-10">
+        <button class="bg-black px-5 py-2 text-white rounded-xl">
+          <a href="https://www.instagram.com/lizam_sf/" target="_blank"
+            >Cek Instagram</a
+          >
+        </button>
+      </div>
+    </section>
+    <!-- End Our Works Section -->
+
+    <!-- Start About Us Section -->
+    <section
+      id="aboutUs"
+      style="background-image: url(assets/bg2.webp)"
+      class="bg-fixed p-10 md:p-24 lg:p-32 xl:p-64 bg-cover"
+    >
+      <div
+        class="w-full max-w-4xl bg-white mx-auto p-6 md:p-12 lg:p-16 xl:p-24"
+      >
+        <div class="border-b-black border-b-2 w-fit place-self-center">
+          <h1 class="text-3xl md:text-4xl xl:text-5xl pb-4 text-center">
+            Tentang Kami
+          </h1>
+        </div>
+        <blockquote class="pt-8 text-justify">
+          <p class="text-base md:text-lg leading-relaxed">
+            Garasi Lizam adalah bengkel spesialis perawatan kendaraan roda dua
+            yang melayani perbaikan, pelapisan, hingga penggantian cat untuk
+            motor, sepeda, dan sepeda listrik. Dengan tenaga ahli yang
+            berpengalaman dan menggunakan material berkualitas, kami berkomitmen
+            untuk memberikan hasil terbaik yang tidak hanya meningkatkan
+            tampilan kendaraan Anda, tetapi juga melindunginya dari kerusakan
+            jangka panjang.
+            <br />
+            <br />
+            Selain layanan perawatan dan perbaikan, Garasi Lizam juga menjual
+            berbagai pilihan cat dengan warna dan kualitas premium yang sesuai
+            dengan gaya dan kebutuhan Anda. Kami hadir sebagai solusi lengkap
+            untuk merawat dan memperindah kendaraan roda dua Anda, memberikan
+            pelayanan yang ramah, cepat, dan profesional agar setiap pelanggan
+            merasakan kepuasan maksimal.
+          </p>
+        </blockquote>
+      </div>
+    </section>
+    <!-- End About Us Section -->
+
+    <!-- Start Banner Section -->
+    <section class="h-[500px] w-full">
+      <div
+        style="background-image: url(assets/car-banner.jpg)"
+        class="bg-fixed bg-no-repeat bg-cover h-full w-full"
+      ></div>
+    </section>
+    <!-- End Banner Section -->
+
+    <!-- Start Contact Section -->
+    <section
+      id="contact"
+      style="background-image: url(assets/bg2.webp)"
+      class="bg-fixed p-10 md:p-24 lg:p-32 xl:p-64 bg-cover"
+    >
+      <div
+        class="w-full max-w-4xl bg-white mx-auto p-6 md:p-12 lg:p-16 xl:p-24"
+      >
+        <div class="border-b-black border-b-2 w-fit mx-auto">
+          <h1 class="text-3xl md:text-4xl xl:text-5xl pb-4 text-center">
+            Kontak
+          </h1>
+        </div>
+        <div class="flex flex-col lg:flex-row self-center mt-10 gap-10">
+          <div class="w-full lg:w-1/2 py-5 text-justify text-sm md:text-base">
+            <p class="mt-4 font-semibold uppercase">Informasi:</p>
+            <p>
+              Kampung gerobogan,Rt/Rw: 001/003 Desa. Sukamulya, Kecamatan
+              Sukamulya, Kabupaten Tangerang,Provinsi Banten
+            </p>
+            <br />
+            <p>Instagram: Lizam_sf</p>
+            <p>Tel: +6289643320675</p>
+            <p class="mt-4 font-semibold uppercase">JAM BUKA:</p>
+            <ul>
+              <li>Senins - Jum'at: 7am - 10pm</li>
+              <li>Sabtu: 8am - 10pm</li>
+              <li>Minggu: 8am - 11pm</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <!-- Start Footer Section-->
+    <!-- <footer class="bg-gray-950 text-white text-center p-20">
+      <p class="text-lg"><span class="text-2xl">&copy;</span> Garasi Lizam</p>
+    </footer> -->
+    <!-- End Footer Sectiom -->
+
+    <script src="app.js"></script>
+  </body>
+</html>
